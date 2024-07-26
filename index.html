@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaquerry.css" />
+    <style>
+      #typewriter {
+        display: inline-block;
+        overflow: hidden;
+        white-space: nowrap;
+        border-right: 0.15em solid orange;
+        animation: typing 3.5s steps(40, end),
+          blink-caret 0.75s step-end infinite;
+      }
+
+      @keyframes typing {
+        from {
+          width: 0;
+        }
+        to {
+          width: 100%;
+        }
+      }
+
+      @keyframes blink-caret {
+        from,
+        to {
+          border-color: transparent;
+        }
+        50% {
+          border-color: orange;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Ayesha Mahmood</div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Ayesha Mahmood</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section_text">
+        <p class="section_text_p1">Hello I'm</p>
+        <h3 class="title">
+          <span id="typewriter"></span>
+        </h3>
+        <p class="section_text_p2">Aspiring AI Engineer</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/AYESHAMRESUME2025.pdf')"
+          >
+            Download CV
+          </button>
+          <button
+            class="btn btn-color-1"
+            onclick="location.href='mailto:mahmoodayesha612@gmail.com';"
+          >
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/github.png"
+            alt="GitHub profile"
+            class="icon"
+            onclick="location.href='https://github.com/mahmoodayesha'"
+          />
+          <img
+            src="./assets/youtube.png"
+            alt="Youtube profile"
+            class="icon"
+            onclick="location.href='https://www.youtube.com/channel/UCaJiyDYV_mbXMuHN0Jq438A'"
+          />
+          <img
+            src="./assets/linkedin.png"
+            alt="Medium profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/mahmood-ayesha/'"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section_text_p1">Get to Know More</p>
+      <h3 class="title">About Me</h3>
+      <div class="section-container">
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img src="./assets/experience.png" alt="" class="icon" />
+              <h3>Experience</h3>
+              <p>
+                1+ years <br />
+                IT Assistant
+              </p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>
+                Bachelors of Science in Computer Science (Expect Grad:
+                <b>June 2025 </b> )<br />
+                @University of Washington Bothell
+              </p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              As an aspiring AI Engineer, I bring a strong foundation in web
+              development and a proven track record in innovative projects. At
+              UWB Hacks AI, I developed a personalized AI solution for high
+              schoolers, earning a top 5 finalist position among 350+
+              participants. My role as an Online Tutoring Program Manager has
+              honed my skills in remote education, achieving a 90% student
+              satisfaction rate. I have experience in Python, Java, C++, and web
+              technologies such as HTML, CSS, and JavaScript, with hands-on
+              projects including TalentFuse App and various inventory and
+              banking systems. My technical expertise extends to frameworks like
+              Flask and React, and tools like Docker and Git. Passionate about
+              merging web development with AI, I am committed to driving
+              impactful solutions and staying at the forefront of technological
+              advancements.
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt=""
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+
+    <section id="projects">
+      <p class="section_text_p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-1.jpeg"
+                alt="project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">
+              Automated Resume Filtering Using Machine Learning and NLP
+            </h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/mahmoodayesha/AIResumeParser'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://www.youtube.com/watch?v=35JLXgp0iHk&t=67s'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-2.jpeg"
+                alt="project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">
+              Enhancing Safety: Automated Helmet Detection Using YOLOv3 and
+              OpenCV
+            </h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/mahmoodayesha/Helmet-Detection-Project'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://www.youtube.com/watch?v=6L9gYr-mF64'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-3.jpeg"
+                alt="project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Book Recommender</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://www.youtube.com/watch?v=6L9gYr-mF64'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://www.youtube.com/watch?v=Z50sIEVORvM'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const text = "Ayesha Mahmood";
+        const typewriterElement = document.getElementById("typewriter");
+        let index = 0;
+
+        function type() {
+          if (index < text.length) {
+            typewriterElement.textContent += text.charAt(index);
+            index++;
+            setTimeout(type, 100);
+          }
+        }
+
+        type();
+      });
+    </script>
+  </body>
+</html>
